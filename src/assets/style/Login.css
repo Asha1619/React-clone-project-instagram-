@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* MAIN CONTAINER */
+
+.main-container{
+    display: flex;
+    min-height: calc(100vh - 90px);
+}
+
+/* LEFT SECTION */
+
+.left-section{
+    width: 60%;
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px solid #2c2c2c;
+}
+
+.banner-image{
+    width: 100%;
+    max-width: 1000px;
+    object-fit: contain;
+}
+
+/* RIGHT SECTION */
+
+.right-section{
+    width: 40%;
+    background-color: #1c1c22;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+/* LOGIN BOX */
+
+.login-box{
+    width: 100%;
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box h2{
+    color: white;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+/* INPUTS */
+
+.input-box{
+    width: 100%;
+    height: 58px;
+
+    padding: 0 20px;
+    margin-bottom: 15px;
+
+    background: transparent;
+    border: 1px solid #44444d;
+    border-radius: 18px;
+
+    color: white;
+    font-size: 16px;
+
+    outline: none;
+}
+
+.input-box::placeholder{
+    color: #9a9aa2;
+}
+
+.input-box:focus{
+    border: 1px solid #0095f6;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn{
+    width: 100%;
+    height: 58px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #0f4c97;
+    color: #9fb9dc;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* FORGOT PASSWORD */
+
+.forgot{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+
+    margin: 25px 0 50px;
+    cursor: pointer;
+}
+
+/* DIVIDER */
+
+.divider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.divider hr{
+    flex: 1;
+    border: none;
+    border-top: 1px solid #44444d;
+}
+
+.divider span{
+    margin: 0 15px;
+    color: #a0a0a8;
+}
+
+/* FACEBOOK BUTTON */
+
+.facebook-btn{
+    width: 100%;
+    height: 50px;
+
+    border-radius: 30px;
+    border: 1px solid #44444d;
+
+    background: transparent;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* CREATE ACCOUNT BUTTON */
+
+.create-btn{
+    width: 100%;
+    height: 50px;
+
+    border-radius: 30px;
+    border: 1px solid #1f87ff;
+
+    background: transparent;
+
+    color: #1f87ff;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* META */
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    background-color: #000;
+    border-top: 1px solid #262626;
+
+    padding: 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* FOOTER LINKS */
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #a8a8a8;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: white;
+}
+
+/* COPYRIGHT */
+
+.footer-copyright{
+    display: flex;
+    gap: 20px;
+    color: #8e8e8e;
+    font-size: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* BOTTOM NAVIGATION */
+
+.bottom-nav{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    font-size: 12px;
+}
+
+.bottom-nav a{
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.bottom-nav a:hover{
+    color: white;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .left-section{
+        width: 50%;
+    }
+
+    .right-section{
+        width: 50%;
+    }
+
+    .login-box h2{
+        font-size: 30px;
+    }
+
+    .banner-image{
+        max-width: 500px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .main-container{
+        flex-direction: column;
+    }
+
+    .left-section{
+        width: 100%;
+        height: 35vh;
+        border-right: none;
+        border-bottom: 1px solid #2c2c2c;
+    }
+
+    .right-section{
+        width: 100%;
+        min-height: 65vh;
+    }
+
+    .banner-image{
+        max-width: 280px;
+    }
+
+    .login-box{
+        max-width: 350px;
+    }
+
+    .login-box h2{
+        font-size: 28px;
+    }
+
+    .bottom-nav{
+        position: static;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+        .footer{
+        padding: 15px;
+    }
+
+    .footer-links{
+        gap: 12px;
+    }
+
+    .footer-links a{
+        font-size: 11px;
+    }
+
+    .footer-copyright{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+    .banner-image{
+        max-width: 200px;
+    }
+
+    .login-box h2{
+        font-size: 24px;
+    }
+
+    .input-box{
+        height: 52px;
+        font-size: 14px;
+    }
+
+    .login-btn,
+    .facebook-btn,
+    .create-btn{
+        height: 48px;
+        font-size: 14px;
+    }
+
+    
+}
+
+/* Tablet */
+
+@media screen and (max-width: 992px){
+
+    .left-section{
+        width: 50%;
+    }
+
+    .right-section{
+        width: 50%;
+    }
+
+    .banner-image{
+        width: 90%;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px){
+
+    .main-container{
+        flex-direction: column;
+    }
+
+    .left-section{
+        width: 100%;
+        height: 35vh;
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+
+    .right-section{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .banner-image{
+        width: 250px;
+    }
+
+    .login-box{
+        max-width: 100%;
+    }
+
+    .footer-links{
+        gap: 10px;
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile */
+
+@media screen and (max-width: 480px){
+
+    .banner-image{
+        width: 180px;
+    }
+
+    .login-box h2{
+        font-size: 24px;
+    }
+
+    .input-box,
+    .login-btn,
+    .facebook-btn,
+    .create-btn{
+        height: 45px;
+        font-size: 14px;
+    }
+}

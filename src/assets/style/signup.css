@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#1c1c22;
+}
+
+.signup-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:40px 20px;
+}
+
+.signup-form{
+    width:100%;
+    max-width:560px;
+}
+
+.back-btn{
+    color:white;
+    text-decoration:none;
+    font-size:35px;
+}
+
+.meta{
+    color:white;
+    margin:10px 0;
+    font-weight:400;
+}
+
+h1{
+    color:white;
+    font-size:48px;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    color:#d0d0d0;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:8px;
+    margin-top:18px;
+}
+
+.input-box{
+    width:100%;
+    height:60px;
+    border:1px solid #43434d;
+    border-radius:16px;
+    background:transparent;
+    padding:0 15px;
+    color:white;
+    font-size:16px;
+}
+
+.input-box::placeholder{
+    color:#9b9b9b;
+}
+
+.info-text{
+    color:#d0d0d0;
+    margin-top:12px;
+    font-size:14px;
+    line-height:22px;
+}
+
+.info-text span{
+    color:#3ea6ff;
+    cursor:pointer;
+}
+
+.birthday-row{
+    display:flex;
+    gap:15px;
+}
+
+.birthday-row select{
+    flex:1;
+    height:60px;
+    border:1px solid #43434d;
+    border-radius:16px;
+    background:transparent;
+    color:white;
+    padding:0 15px;
+    font-size:16px;
+}
+
+.signup-btn{
+    width:100%;
+    height:55px;
+    margin-top:30px;
+    border:none;
+    border-radius:30px;
+    background:#0095f6;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.signup-btn:hover{
+    background:#1877f2;
+}
+
+.terms{
+    color: #d0d0d0;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+.terms span{
+    color: #3ea6ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.account-btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+
+    background: transparent;
+    border: 1px solid #444;
+    border-radius: 30px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+.account-btn:hover{
+    background-color: #2a2a2a;
+    color: white;
+    border-color: #666;
+}
+
+@media screen and (max-width: 768px){
+
+    .signup-container{
+        padding: 20px;
+    }
+
+    .signup-form{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .birthday-row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    h1{
+        font-size: 26px;
+    }
+
+    .input-box{
+        height: 50px;
+    }
+
+    .signup-btn,
+    .account-btn{
+        height: 45px;
+    }
+}
