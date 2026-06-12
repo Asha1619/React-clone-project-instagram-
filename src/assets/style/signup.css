@@ -83,21 +83,19 @@ label{
 }
 
 .birthday-row{
-    display:flex;
-    gap:15px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .birthday-row select{
-    flex:1;
-    height:60px;
-    border:1px solid #43434d;
-    border-radius:16px;
-    background:transparent;
-    color:white;
-    padding:0 15px;
-    font-size:16px;
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
 }
-
 .signup-btn{
     width:100%;
     height:55px;
